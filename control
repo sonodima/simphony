@@ -1,0 +1,9 @@
+Package: com.sonodima.simphony
+Name: Simphony
+Version: 0.1.0
+Architecture: iphoneos-arm
+Description: Customize the carrier, signal strength and network type in the status bar.
+Maintainer: sonodima
+Author: sonodima
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.3), firmware (>= 6.0), firmware (<= 11.0)

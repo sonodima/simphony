@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>/Applications/Preferences.app/icon-table@2x.png</string>
+		<key>label</key>
+		<string>Simphony</string>
+	</dict>
+	<key>title</key>
+	<string>Simphony</string>
+	<key>items</key>
+	<array>
+		<!-- 'Enabled' Switch -->
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.sonodima.simphony</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>default</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>com.sonodima.simphony/preferences.changed</string>
+		</dict>
+
+		<!-- Configuration Group -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Configuration</string>
+		</dict>
+
+		<!-- 'Suppress Alerts' Switch -->
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.sonodima.simphony</string>
+			<key>key</key>
+			<string>suppressAlerts</string>
+			<key>label</key>
+			<string>Suppress Alerts</string>
+			<key>default</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>com.sonodima.simphony/preferences.changed</string>
+		</dict>
+
+		<!-- 'Carrier Name' Input -->
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.sonodima.simphony</string>
+			<key>key</key>
+			<string>carrierName</string>
+			<key>label</key>
+			<string>Carrier Name</string>
+			<key>default</key>
+			<string>AT&amp;T</string>
+			<key>PostNotification</key>
+			<string>com.sonodima.simphony/preferences.changed</string>
+		</dict>
+
+		<!-- Data Type Group -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Data Type</string>
+		</dict>
+
+		<!-- Data Type Selector -->
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>defaults</key>
+			<string>com.sonodima.simphony</string>
+			<key>key</key>
+			<string>dataType</string>
+			<key>default</key>
+			<integer>3</integer>
+			<key>validTitles</key>
+			<array>
+				<string>E</string>
+				<string>3G</string>
+				<string>4G</string>
+				<string>LTE</string>
+			</array>
+			<key>validValues</key>
+			<array>
+        <integer>0</integer>
+        <integer>1</integer>
+        <integer>2</integer>
+        <integer>3</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.sonodima.simphony/preferences.changed</string>
+		</dict>
+
+		<!-- Signal Strength Group -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Signal Strength</string>
+		</dict>
+
+		<!-- Signal Strength Slider -->
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.sonodima.simphony</string>
+			<key>key</key>
+			<string>signalStrength</string>
+			<key>label</key>
+			<string>Signal Strength</string>
+			<key>min</key>
+			<integer>0</integer>
+			<key>max</key>
+			<integer>5</integer>
+			<key>step</key>
+			<integer>1</integer>
+			<key>default</key>
+			<integer>4</integer>
+			<key>showValue</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>com.sonodima.simphony/preferences.changed</string>
+		</dict>
+	</array>
+</dict>
+</plist>

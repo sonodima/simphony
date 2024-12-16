@@ -1,0 +1,5 @@
+.theos/
+packages/
+
+# macOS System Files
+.DS_Store
