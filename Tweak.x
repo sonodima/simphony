@@ -73,7 +73,7 @@ static void updateItems() {
 }
 
 static int mapDataType(int index) {
-	if (osAtLeast(@"8")) {
+	if (osAtLeast(@"7.1")) {
 		switch (index) {
 			case 0: return 3;
 			case 1: return 5;
@@ -106,6 +106,11 @@ static int mapDataType(int index) {
 
 - (BOOL)needsUserIdentificationModule {
 	return enabled ? NO : %orig;
+}
+
+// Shows the "bars" in non-cellular devices.
+- (BOOL)cellularRadioCapabilityIsActive {
+	return enabled ? YES : %orig;
 }
 
 - (long)signalStrengthBars {

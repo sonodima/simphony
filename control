@@ -6,4 +6,4 @@ Description: Customize the carrier, signal strength and network type in the stat
 Maintainer: sonodima
 Author: sonodima
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.3), firmware (>= 6.0), firmware (<= 11.0)
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.3), firmware (>= 6.0.0), firmware (<= 10.3.4)
